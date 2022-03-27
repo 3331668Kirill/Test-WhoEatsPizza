@@ -1,0 +1,43 @@
+body {
+  font-family: sans-serif;
+}
+
+button {
+  background: red;
+  color: blue;
+  font-size: 20px;
+}
+
+
+
+.chart {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chart:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.triangle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  transform-origin: center bottom;
+  overflow: hidden;
+}
+
+.circle {
+  height: 100%;
+  width: 100%;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  transform-origin: center bottom;
+
+}
+
